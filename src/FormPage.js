@@ -1,6 +1,7 @@
 import React from 'react';
 import StandardForm from './StandardForm';
 import FormikForm from './FormikForm';
+import FormikFieldForm from './FormikFieldForm';
 import FormikMuiForm from './FormikMuiForm';
 
 const Frame = ({ children, caption }) => (
@@ -19,6 +20,9 @@ const FormPage = () => (
     </Frame>
     <Frame caption="Formik Form with MUI TextField">
       <FormikForm />
+    </Frame>
+    <Frame caption="Formik Form with Formik Field">
+      <FormikFieldForm />
     </Frame>
     <Frame caption="Formik Form with formik-material-ui TextField">
       <FormikMuiForm />
